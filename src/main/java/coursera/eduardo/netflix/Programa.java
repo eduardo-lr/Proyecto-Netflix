@@ -69,9 +69,9 @@ abstract class Programa implements Visualizable {
 			minutos++;
 			tiempo -= 60.0;
 		}
-		int remaind = (int) tiempo;
-		String segundos = remaind < 10 ? "0".concat(Integer.toString(remaind)) 
-													: Integer.toString(remaind);
+		int restante = (int) tiempo;
+		String segundos = restante < 10 ? "0".concat(Integer.toString(restante)) 
+													: Integer.toString(restante);
 		return String.format("%d:%s", minutos, segundos);
 	}
 }

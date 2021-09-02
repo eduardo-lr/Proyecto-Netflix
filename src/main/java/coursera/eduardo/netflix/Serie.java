@@ -37,7 +37,7 @@ class Serie extends Programa {
                               "Genero               : %s\n" + 
 							  "Creador              : %s\n" +
 							  "Duracion             : %.3f\n",
-                              titulo, temporadas, (visto ? "Verdadero" : "Falso"), 
+                              titulo, temporadas, (visto ? "Sí" : "No"), 
 														genero, creador, duracion));
 	}
 }
