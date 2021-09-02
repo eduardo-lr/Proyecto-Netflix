@@ -35,6 +35,6 @@ class Pelicula extends Programa {
 							  "Duración  : %.3f\n" +
 							  "Visto     : %s\n",
                               titulo, genero, creador, año, 
-								duracion, (visto ? "Verdadero" : "Falso")));
+								duracion, (visto ? "Sí" : "No")));
 	}
 }

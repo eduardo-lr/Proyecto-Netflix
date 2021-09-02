@@ -5,7 +5,6 @@ class Serie extends Programa {
     public int temporadas;
 
     public Serie() {
-    	super();
         temporadas = 1; 
     }
 
