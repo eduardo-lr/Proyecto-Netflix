@@ -34,7 +34,7 @@ class Pelicula extends Programa {
                               "Año       : %d\n" + 
 							  "Duración  : %.3f\n" +
 							  "Visto     : %s\n",
-                              this.titulo, this.genero, this.creador, this.año, 
-                              	this.duracion, (this.visto ? "Verdadero" : "Falso")));
+                              titulo, genero, creador, año, 
+								duracion, (visto ? "Verdadero" : "Falso")));
 	}
 }

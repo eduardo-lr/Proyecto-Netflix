@@ -38,7 +38,7 @@ class Serie extends Programa {
                               "Genero               : %s\n" + 
 							  "Creador              : %s\n" +
 							  "Duracion             : %.3f\n",
-                              this.titulo, this.temporadas, (this.visto ? "Verdadero" : "Falso"), 
-                                this.genero, this.creador, this.duracion));
+                              titulo, temporadas, (visto ? "Verdadero" : "Falso"), 
+														genero, creador, duracion));
 	}
 }
