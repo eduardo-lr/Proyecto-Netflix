@@ -2,7 +2,7 @@ package coursera.eduardo.netflix;
 
 import java.util.Random;
 
-class Programa implements Visualizable {
+abstract class Programa implements Visualizable {
 	
 	public String titulo;
 	public String genero;
@@ -60,6 +60,8 @@ class Programa implements Visualizable {
 	@Override public String tiempoVisto() {
 		return (visto ? calculaTiempo(new Random().nextDouble()*duracion) : "0:00");
 	}
+
+	@Override abstract public String toString();
 	
 	private String calculaTiempo(double tiempo) {
 		int minutos = 0;
@@ -68,8 +70,8 @@ class Programa implements Visualizable {
 			tiempo -= 60.0;
 		}
 		int remaind = (int) tiempo;
-		String segundos = remaind < 10 ? "0".concat(Integer.toString(remaind)) : 
-												Integer.toString(remaind);
+		String segundos = remaind < 10 ? "0".concat(Integer.toString(remaind)) 
+													: Integer.toString(remaind);
 		return String.format("%d:%s", minutos, segundos);
 	}
 }
