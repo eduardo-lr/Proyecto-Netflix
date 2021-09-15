@@ -8,15 +8,15 @@ import java.util.Random;
  */
 abstract class Programa implements Visualizable {
 	
-	/* El titulo del programa. */
+	/** El titulo del programa. */
 	public String titulo;
-	/* El genero del programa. */
+	/** El genero del programa. */
 	public String genero;
-	/* El creador del programa. */
+	/** El creador del programa. */
 	public String creador;
-	/* El estado de visualizacion del programa. */
+	/** El estado de visualizacion del programa. */
 	public boolean visto;
-	/* La duración del programa, en segundos. */
+	/** La duración del programa, en segundos. */
 	public double duracion;
    
 	/**
@@ -33,7 +33,7 @@ abstract class Programa implements Visualizable {
     	this.creador = creador;
     }
    
-	/*
+	/**
 	 * Regresa el título del programa.
 	 * @return el título del programa.
 	 */
@@ -41,7 +41,7 @@ abstract class Programa implements Visualizable {
         return titulo;
     }
 
-	/*
+	/**
 	 * Regresa el genero del programa.
 	 * @return el genero del programa.
 	 */
@@ -49,7 +49,7 @@ abstract class Programa implements Visualizable {
         return genero;
     }
 
-	/*
+	/**
 	 * Regresa el creador del programa.
 	 * @return el creador del programa.
 	 */
@@ -57,7 +57,7 @@ abstract class Programa implements Visualizable {
         return creador;
     }
     
-	/*
+	/**
 	 * Regresa la duracion del programa.
 	 * @return la duracion del programa.
 	 */
@@ -65,7 +65,7 @@ abstract class Programa implements Visualizable {
     	return duracion;
     }
    
-	/*
+	/**
 	 * Asigna el título dado al programa.
 	 * @param titulo el titulo a agregar.
 	 */
@@ -73,7 +73,7 @@ abstract class Programa implements Visualizable {
         this.titulo = titulo;
     }
     
-	/*
+	/**
 	 * Asigna el genero dado al programa.
 	 * @param genero el genero a agregar.
 	 */
@@ -81,7 +81,7 @@ abstract class Programa implements Visualizable {
         this.genero = genero;
     }
 
-	/*
+	/**
 	 * Asigna el creador dado al programa.
 	 * @param creador el creador a agregar.
 	 */
@@ -89,7 +89,7 @@ abstract class Programa implements Visualizable {
         this.creador = creador;
     }
 
-	/*
+	/**
 	 * Asigna la duración dada al programa.
 	 * @param duracion la duracion a agregar.
 	 */
@@ -97,14 +97,14 @@ abstract class Programa implements Visualizable {
         this.duracion = duracion;
     }
    
-	/*
+	/**
 	 * Marca como visto el programa.
 	 */
 	@Override public void marcarVisto() {
 		visto = true;
 	}
 
-	/*
+	/**
 	 * Nos dice si el programa ha sido visto.
 	 * @return el estado de visualización del programa.
 	 */
@@ -112,7 +112,7 @@ abstract class Programa implements Visualizable {
 		return visto;
 	}
 
-	/*
+	/**
 	 * Regresa el tiempo que se ha visto el programa.
 	 * @return el tiempo que se ha visto el programa.
 	 */
@@ -120,13 +120,13 @@ abstract class Programa implements Visualizable {
 		return (visto ? calculaTiempo(new Random().nextDouble()*duracion) : "0:00");
 	}
 
-	/*
+	/**
 	 * Regresa una representación en cadena del programa.
 	 * @return una representación en cadena del programa.
 	 */
 	@Override abstract public String toString();
 
-	/*
+	/**
 	 * Método privado para convertir tiempo en segundos
 	 * a minutos:segundos.
 	 * @param tiempo el tiempo a convertir.
