@@ -49,9 +49,8 @@ public class App {
 			/* Mostramos los programas vistos y un detalle 
 			   de los minutos/segundos visualizados */
 			for (Programa programa : programas)
-				System.out.printf("%s" + 
-								  "Tiempo visto: %s minutos\n" + "\n", 
-								  	programa.toString(), programa.tiempoVisto());
+				System.out.printf("%s" + "Tiempo visto: %s minutos\n" + "\n", 
+							programa.toString(), programa.tiempoVisto());
 			
 			/* Buscamos la serie con más temporadas */
 			Serie masTemporadas = series.get(0);
