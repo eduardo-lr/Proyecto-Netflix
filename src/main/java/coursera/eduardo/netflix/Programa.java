@@ -27,6 +27,8 @@ abstract class Programa implements Visualizable {
 	/**
 	 * Construye un programa a partir de su título 
 	 * y su creador.
+	 * @param titulo el titulo del programa
+	 * @param creador el creador del programa
 	 */
     	public Programa(String titulo, String creador) {
     		this.titulo = titulo;
