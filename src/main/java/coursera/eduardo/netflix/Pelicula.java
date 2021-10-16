@@ -33,7 +33,7 @@ class Pelicula extends Programa {
 	 * @param duración la duración de la película, en segundos.
 	 */
 	public Pelicula(String titulo, String genero, 
-						String creador, int año, double duracion) {
+				String creador, int año, double duracion) {
 		this.titulo = titulo;
 		this.genero = genero;
 		this.creador = creador;
@@ -63,12 +63,12 @@ class Pelicula extends Programa {
 	 */
 	@Override public String toString() {
 		return (String.format("Titulo    : %s\n" +
-                              "Genero    : %s\n" +
-                              "Creador   : %s\n" +
-                              "Año       : %d\n" + 
-							  "Duración  : %.3f\n" +
-							  "Visto     : %s\n",
-                              titulo, genero, creador, año, 
-								duracion, (visto ? "Sí" : "No")));
+                              	      "Genero    : %s\n" +
+                              	      "Creador   : %s\n" +
+                              	      "Año       : %d\n" + 
+				      "Duración  : %.3f\n" +
+				      "Visto     : %s\n",
+                              			titulo, genero, creador, año, 
+							duracion, (visto ? "Sí" : "No")));
 	}
 }
