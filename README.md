@@ -4,7 +4,7 @@ Este programa ejemplifica la programación orientada a objetos en [Java], en con
 
 ![Diagrama de clases](clases.png)
 
-Por otro lado, la clase principal ejecutable _App_ ejemplifica el uso de las clases anteriores: se declaran cinco series y cinco películas, se usa un [generador de números aleatorios] para escoger al azar algunas películas y series dentro de estas opciones y se muestran sus atributos en pantalla. Al final se muestra también la serie con más temporadas y la película más reciente.
+Por otro lado, la clase principal ejecutable _App_ ejemplifica el uso de las clases anteriores: se declaran cinco series y cinco películas, usando los distintos constructores que se tienen, se usa un [generador de números aleatorios] para escoger al azar algunas películas y series dentro de estas opciones y se muestran sus atributos en pantalla. Al final se muestra también la serie con más temporadas y la película más reciente.
 
 El código se compiló usando [maven] y para ejecutar el programa sólo se requiere tener instalada la [Máquina virtual de Java] (JVM). Para ejecutar el programa en Linux basta con descargar la carpeta _target_, colocarse dentro de ésta y ejecutar:
 
