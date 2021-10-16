@@ -3,6 +3,9 @@ package coursera.eduardo.netflix;
 import java.util.Random;
 import java.util.ArrayList;
 
+/**
+ * <p> Clase principal ejecutable. </p>
+ */
 public class App {
 
 	public static void main(String[] args) {
