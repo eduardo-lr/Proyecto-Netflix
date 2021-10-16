@@ -15,11 +15,11 @@ interface Visualizable {
 	 * Regresa el estado de visualización.
 	 * @return el estado de visualización.
 	 */
-    public boolean esVisto();
+    	public boolean esVisto();
 
 	/**
 	 * Regresa el tiempo que ha sido visto el visualizable.
 	 * @return el tiempo que ha sido visto el visualizable.
 	 */
-    public String tiempoVisto();
+    	public String tiempoVisto();
 }
